@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.gameBody {
+  background-image: url(forest.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  width: 100%;
+  height: 100vh;
+}
+.point {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.gameover {
+  position: absolute;
+  left: 31vw;
+  top: 265px;
+  font-size: 100px;
+  font-weight: bolder;
+  z-index: 5;
+  visibility: hidden;
+  transition-duration: 0.5s;
+}
+.frog {
+  position: absolute;
+  background-image: url(frog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 88px;
+  height: 80px;
+  bottom: 0;
+  left: 50vh;
+  transition-duration: 1s;
+}
+
+.animateFrog {
+  animation: frog 0.7s linear;
+}
+@keyframes frog {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 300px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.dragonLand {
+  position: absolute;
+  background-image: url(obsticle\ land.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 149px;
+  height: 94px;
+  bottom: 0;
+  left: 80vw;
+}
+.animationDragonLand {
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: -20vh;
+  }
+}
+
+.obsticle {
+  position: absolute;
+  background-image: url(dragon.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 149px;
+  height: 137px;
+  bottom: 50vh;
+  left: 80vw;
+}
+
+.obsAni {
+  animation: obs 1.5s linear;
+}
+
+@keyframes obs {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: -20vh;
+  }
+}
